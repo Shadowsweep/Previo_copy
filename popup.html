@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last Copied Text</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 200px;
+            min-height: 150px;
+            margin: 0;
+            background: #f4f6f8;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        #copy-btn {
+            padding: 12px 24px;
+            font-size: 1em;
+            font-weight: 600;
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        #copy-btn:hover {
+            background: linear-gradient(135deg, #66BB6A, #4CAF50);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #copy-btn:active {
+            background: #388E3C;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h3>Last Copied Text</h3>
+    <button id="copy-btn">Copy Last Text</button>
+    <script src="popup.js"></script>
+</body>
+</html>
